@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MediaPlayer/MPMoviePlayerController.h>
 @interface ViewController : UIViewController
-
-
+{
+    MPMoviePlayerController *audioPlayer;
+}
+@property (nonatomic, retain) MPMoviePlayerController *audioPlayer;
 @end
+
+
 
