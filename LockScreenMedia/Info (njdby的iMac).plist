@@ -30,6 +30,8 @@
 	<array>
 		<string>NSUserActivityTypeBrowsingWeb</string>
 		<string>com.handoffdemo.dosomething</string>
+		<string>com.razeware.shopsnap.view</string>
+		<string>com.razeware.shopsnap.edit</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

@@ -142,23 +142,32 @@
     
 }
 
-//Handoff
-- (BOOL)application:(UIApplication *)application willContinueUserActivityWithType:(NSString *)userActivityType
+//handoff
+-(BOOL)application:(UIApplication *)application willContinueUserActivityWithType:(NSString *)userActivityType
 {
-    return YES;
+    if ([userActivityType isEqualToString:@"com.handoffdemo.dosomething"]) {
+        return YES;
+    }else
+    {
+        return NO;
+    }
 }
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler
 {
 //    [self restoreUserActivityState:userActivity];
     
-    NSDictionary *userInfo = userActivity.userInfo;
-    if (userInfo && [userInfo isKindOfClass:[NSDictionary class]])
-    {
-        NSLog(@"---->%@",userInfo);
-    }
+    BOOL handled = NO;
+    NSDictionary *userInfo = [[NSDictionary alloc] init];
+    if (userInfo != nil) {
+        userInfo = [userActivity userInfo];
+    } //取到活动的字典
+     NSString *jumpto = [userInfo objectForKey:@"jumpId"];
+
+    NSLog(@"............%@............",jumpto);
     
-    return YES;
+    handled = YES;
+    return handled;
 }
 
 - (void)application:(UIApplication *)application didUpdateUserActivity:(NSUserActivity *)userActivity

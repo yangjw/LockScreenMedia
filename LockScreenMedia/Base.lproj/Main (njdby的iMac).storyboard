@@ -47,7 +47,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="next"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="51" y="212" width="30" height="30"/>
+                                    <rect key="frame" x="44" y="212" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="sEE-6r-Iji" kind="push" id="ZTd-9U-7pE"/>
@@ -78,64 +78,23 @@
             </objects>
             <point key="canvasLocation" x="1246.5" y="482"/>
         </scene>
-        <!--VC1-->
+        <!--View Controller-->
         <scene sceneID="fIR-vE-s3g">
             <objects>
-                <viewController id="sEE-6r-Iji" customClass="VC1" sceneMemberID="viewController">
+                <viewController id="sEE-6r-Iji" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w2f-HO-guX"/>
                         <viewControllerLayoutGuide type="bottom" id="JP2-Qb-Qq4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nrA-4a-zGw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUc-ZC-yVS">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="nextVC"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="18" y="98" width="50" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="Xky-s0-AQz" kind="push" id="cFw-yr-eOj"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="SUc-ZC-yVS"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="SUc-ZC-yVS"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="hDb-vt-Eh2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVz-NA-KJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2001" y="482"/>
-        </scene>
-        <!--VC2-->
-        <scene sceneID="unO-Lg-GIK">
-            <objects>
-                <viewController id="Xky-s0-AQz" customClass="VC2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="glf-E4-OP1"/>
-                        <viewControllerLayoutGuide type="bottom" id="Luj-VW-Ukm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uyy-mq-hXb">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="1FB-qD-YJs"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hdq-9n-kkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2778" y="482"/>
+            <point key="canvasLocation" x="1960.5" y="482"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X5z-bc-eS1">

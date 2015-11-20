@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21625E701BFC609900B33C86 /* KeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 21625E6F1BFC609900B33C86 /* KeyChain.m */; };
+		2174BB1A1BFEAD7200CF67EB /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174BB191BFEAD7200CF67EB /* VC1.m */; };
+		2174BB1D1BFEAD8300CF67EB /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174BB1C1BFEAD8300CF67EB /* VC2.m */; };
 		217CF4DE1BFC0AC80051928F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CF4DD1BFC0AC80051928F /* main.m */; };
 		217CF4E11BFC0AC80051928F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CF4E01BFC0AC80051928F /* AppDelegate.m */; };
 		217CF4E41BFC0AC80051928F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CF4E31BFC0AC80051928F /* ViewController.m */; };
@@ -33,6 +35,10 @@
 		21625E6E1BFC609900B33C86 /* KeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChain.h; sourceTree = "<group>"; };
 		21625E6F1BFC609900B33C86 /* KeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChain.m; sourceTree = "<group>"; };
 		21625E711BFC69A100B33C86 /* LockScreenMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LockScreenMedia.entitlements; sourceTree = "<group>"; };
+		2174BB181BFEAD7200CF67EB /* VC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC1.h; sourceTree = "<group>"; };
+		2174BB191BFEAD7200CF67EB /* VC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC1.m; sourceTree = "<group>"; };
+		2174BB1B1BFEAD8300CF67EB /* VC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
+		2174BB1C1BFEAD8300CF67EB /* VC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2.m; sourceTree = "<group>"; };
 		217CF4D91BFC0AC80051928F /* LockScreenMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockScreenMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217CF4DD1BFC0AC80051928F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		217CF4DF1BFC0AC80051928F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +128,10 @@
 				21625E6F1BFC609900B33C86 /* KeyChain.m */,
 				21FCEADE1BFDA1E200270DB5 /* YAudioPlayer.h */,
 				21FCEADF1BFDA1E200270DB5 /* YAudioPlayer.m */,
+				2174BB181BFEAD7200CF67EB /* VC1.h */,
+				2174BB191BFEAD7200CF67EB /* VC1.m */,
+				2174BB1B1BFEAD8300CF67EB /* VC2.h */,
+				2174BB1C1BFEAD8300CF67EB /* VC2.m */,
 			);
 			path = LockScreenMedia;
 			sourceTree = "<group>";
@@ -216,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2174BB1A1BFEAD7200CF67EB /* VC1.m in Sources */,
 				217CF4E41BFC0AC80051928F /* ViewController.m in Sources */,
+				2174BB1D1BFEAD8300CF67EB /* VC2.m in Sources */,
 				21FCEAE01BFDA1E200270DB5 /* YAudioPlayer.m in Sources */,
 				21625E701BFC609900B33C86 /* KeyChain.m in Sources */,
 				217CF4E11BFC0AC80051928F /* AppDelegate.m in Sources */,
