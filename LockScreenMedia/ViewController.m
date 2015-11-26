@@ -34,10 +34,27 @@ static NSString * ActivityItemKey  = @"shopsnap.item.key";
 
 @synthesize audioPlayer = audioPlayer;
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    audioY = [YAudioPlayer sharedPlay];
+    
+    [self initPlayer];
+#warning Handoff
+    //    [self startUserActivity];
+    
+    
+    UILocalizedIndexedCollation *theCollation = [UILocalizedIndexedCollation currentCollation];
+    NSLog(@"---->%@---->%@",theCollation.sectionTitles,[[NSArray arrayWithObject:UITableViewIndexSearch] arrayByAddingObjectsFromArray:
+                                                 [[UILocalizedIndexedCollation currentCollation] sectionIndexTitles]]);
+    
+}
+
 - (void)initPlayer
 {
     //    [[AVAudioSession sharedInstance] setDelegate: self];
-    
     NSError *myErr;
     // Initialize the AVAudioSession here.
     if (![[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&myErr]) {
@@ -58,24 +75,8 @@ static NSString * ActivityItemKey  = @"shopsnap.item.key";
     //    audioPlayer.view.hidden = YES;
     //    audioPlayer.movieSourceType = MPMovieSourceTypeStreaming;
     //    [audioPlayer prepareToPlay];
-    
-
     [self setupAudioPlayer:@"music"];
-    
 }
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    audioY = [YAudioPlayer sharedPlay];
-    
-    [self initPlayer];
-#warning Handoff
-//    [self startUserActivity];
-}
-
 /*
  * Setup the AudioPlayer with
  * Filename and FileExtension like mp3
@@ -86,8 +87,6 @@ static NSString * ActivityItemKey  = @"shopsnap.item.key";
     NSString *fileExtension = @"mp3";
     [audioY initPlayer:fileName fileExtension:fileExtension];
 }
-
-
 -(void)startUserActivity
 {
     NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:ActivityTypeView];
@@ -103,6 +102,9 @@ static NSString * ActivityItemKey  = @"shopsnap.item.key";
     
     [super updateUserActivityState:activity];
 }
+
+
+
 
 - (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player
 {
@@ -526,6 +528,8 @@ static NSString * ActivityItemKey  = @"shopsnap.item.key";
     [[NSFileManager defaultManager] setAttributes:attributes
                                      ofItemAtPath:filePath
                                             error:nil];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

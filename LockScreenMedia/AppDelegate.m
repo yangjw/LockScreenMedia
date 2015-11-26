@@ -8,15 +8,41 @@
 
 #import "AppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
+#import <AddressBook/AddressBook.h>
+#import "VC1.h"
 @interface AppDelegate ()
+{
+    
+}
+@property (nonatomic, strong) VC1 *viewcontrller;
 
 @end
 
 @implementation AppDelegate
 
 
+- (VC1 *)viewcontrller
+{
+    if (!_viewcontrller)
+    {
+        UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        _viewcontrller = [board instantiateViewControllerWithIdentifier:@"V1"];
+    }
+    return _viewcontrller;
+}
+//监听通讯录变化
+void addressBookChanged(ABAddressBookRef addressBook, CFDictionaryRef info, void *context)
+{
+    NSLog(@"AddressBook Changed");
+//    VC1 *myVC = (__bridge VC1 *)context;
+//    [myVC getPersonOutOfAddressBook];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ABAddressBookRef addresBook = ABAddressBookCreateWithOptions(NULL, NULL);
+    ABAddressBookRegisterExternalChangeCallback(addresBook, addressBookChanged, (__bridge void *)(self.viewcontrller));
+    
     
     AVAudioSession *session = [AVAudioSession sharedInstance];
     NSError *setCategoryError = nil;

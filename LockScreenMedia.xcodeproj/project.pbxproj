@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2152F2771C02AADD004EE6BA /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2152F2761C02AADD004EE6BA /* CollectionViewLayout.m */; };
 		21625E701BFC609900B33C86 /* KeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 21625E6F1BFC609900B33C86 /* KeyChain.m */; };
+		216625921BFEFDD00045901C /* LockScreenSf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216625911BFEFDD00045901C /* LockScreenSf.swift */; };
 		2174BB1A1BFEAD7200CF67EB /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174BB191BFEAD7200CF67EB /* VC1.m */; };
 		2174BB1D1BFEAD8300CF67EB /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174BB1C1BFEAD8300CF67EB /* VC2.m */; };
 		217CF4DE1BFC0AC80051928F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CF4DD1BFC0AC80051928F /* main.m */; };
@@ -26,15 +28,21 @@
 		217CF5021BFC0CC70051928F /* AlbumArt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217CF5011BFC0CC70051928F /* AlbumArt@2x.png */; };
 		217CF5061BFC1B1B0051928F /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 217CF5051BFC1B1B0051928F /* image2.png */; };
 		217CF5081BFC20480051928F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217CF5071BFC20480051928F /* AudioToolbox.framework */; };
+		218C61991C04486400DAE8F1 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218C61981C04486400DAE8F1 /* AddressBook.framework */; };
+		218C619B1C04486900DAE8F1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218C619A1C04486900DAE8F1 /* AddressBookUI.framework */; };
 		21FCEAE01BFDA1E200270DB5 /* YAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FCEADF1BFDA1E200270DB5 /* YAudioPlayer.m */; };
 		21FCEAE21BFDBE5F00270DB5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FCEAE11BFDBE5F00270DB5 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2152F2751C02AADD004EE6BA /* CollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
+		2152F2761C02AADD004EE6BA /* CollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayout.m; sourceTree = "<group>"; };
 		21625E6D1BFC4D3700B33C86 /* ShopSnap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopSnap.h; sourceTree = "<group>"; };
 		21625E6E1BFC609900B33C86 /* KeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChain.h; sourceTree = "<group>"; };
 		21625E6F1BFC609900B33C86 /* KeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChain.m; sourceTree = "<group>"; };
 		21625E711BFC69A100B33C86 /* LockScreenMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LockScreenMedia.entitlements; sourceTree = "<group>"; };
+		216625901BFEFDCF0045901C /* LockScreenMedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LockScreenMedia-Bridging-Header.h"; sourceTree = "<group>"; };
+		216625911BFEFDD00045901C /* LockScreenSf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockScreenSf.swift; sourceTree = "<group>"; };
 		2174BB181BFEAD7200CF67EB /* VC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC1.h; sourceTree = "<group>"; };
 		2174BB191BFEAD7200CF67EB /* VC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC1.m; sourceTree = "<group>"; };
 		2174BB1B1BFEAD8300CF67EB /* VC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
@@ -59,6 +67,9 @@
 		217CF5011BFC0CC70051928F /* AlbumArt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumArt@2x.png"; sourceTree = "<group>"; };
 		217CF5051BFC1B1B0051928F /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		217CF5071BFC20480051928F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		218C61981C04486400DAE8F1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		218C619A1C04486900DAE8F1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		21BE9E661C040C81004117AB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		21FCEADE1BFDA1E200270DB5 /* YAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAudioPlayer.h; sourceTree = "<group>"; };
 		21FCEADF1BFDA1E200270DB5 /* YAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAudioPlayer.m; sourceTree = "<group>"; };
 		21FCEAE11BFDBE5F00270DB5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -69,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218C619B1C04486900DAE8F1 /* AddressBookUI.framework in Frameworks */,
+				218C61991C04486400DAE8F1 /* AddressBook.framework in Frameworks */,
 				21FCEAE21BFDBE5F00270DB5 /* CoreMedia.framework in Frameworks */,
 				217CF5081BFC20480051928F /* AudioToolbox.framework in Frameworks */,
 				217CF5001BFC0B5F0051928F /* AVKit.framework in Frameworks */,
@@ -86,6 +99,8 @@
 		217CF4D01BFC0AC80051928F = {
 			isa = PBXGroup;
 			children = (
+				218C619A1C04486900DAE8F1 /* AddressBookUI.framework */,
+				218C61981C04486400DAE8F1 /* AddressBook.framework */,
 				21FCEAE11BFDBE5F00270DB5 /* CoreMedia.framework */,
 				217CF5071BFC20480051928F /* AudioToolbox.framework */,
 				217CF4FF1BFC0B5F0051928F /* AVKit.framework */,
@@ -132,6 +147,10 @@
 				2174BB191BFEAD7200CF67EB /* VC1.m */,
 				2174BB1B1BFEAD8300CF67EB /* VC2.h */,
 				2174BB1C1BFEAD8300CF67EB /* VC2.m */,
+				216625911BFEFDD00045901C /* LockScreenSf.swift */,
+				216625901BFEFDCF0045901C /* LockScreenMedia-Bridging-Header.h */,
+				2152F2751C02AADD004EE6BA /* CollectionViewLayout.h */,
+				2152F2761C02AADD004EE6BA /* CollectionViewLayout.m */,
 			);
 			path = LockScreenMedia;
 			sourceTree = "<group>";
@@ -194,6 +213,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 217CF4D01BFC0AC80051928F;
 			productRefGroup = 217CF4DA1BFC0AC80051928F /* Products */;
@@ -227,12 +247,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2174BB1A1BFEAD7200CF67EB /* VC1.m in Sources */,
+				2152F2771C02AADD004EE6BA /* CollectionViewLayout.m in Sources */,
 				217CF4E41BFC0AC80051928F /* ViewController.m in Sources */,
 				2174BB1D1BFEAD8300CF67EB /* VC2.m in Sources */,
 				21FCEAE01BFDA1E200270DB5 /* YAudioPlayer.m in Sources */,
 				21625E701BFC609900B33C86 /* KeyChain.m in Sources */,
 				217CF4E11BFC0AC80051928F /* AppDelegate.m in Sources */,
 				217CF4DE1BFC0AC80051928F /* main.m in Sources */,
+				216625921BFEFDD00045901C /* LockScreenSf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +273,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				217CF4EB1BFC0AC80051928F /* Base */,
+				21BE9E661C040C81004117AB /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -342,6 +365,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LockScreenMedia/LockScreenMedia.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -351,6 +376,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = njdby.LockScreenMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LockScreenMedia/LockScreenMedia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -358,6 +385,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LockScreenMedia/LockScreenMedia.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -367,6 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = njdby.LockScreenMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LockScreenMedia/LockScreenMedia-Bridging-Header.h";
 			};
 			name = Release;
 		};

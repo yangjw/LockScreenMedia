@@ -8,7 +8,7 @@
 
 #import "VC2.h"
 
-@interface VC2 ()<NSUserActivityDelegate>
+@interface VC2 ()<NSUserActivityDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @end
 
@@ -24,6 +24,24 @@
     [super viewWillAppear:animated];
     [self creatHandOffUserActivity];
 }
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 40;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor blueColor];
+    return cell;
+}
+
 
 - (void)creatHandOffUserActivity
 {
@@ -47,6 +65,20 @@
         [self.userActivity becomeCurrent];
     }
 }
+#pragma mark - UICollectionViewFlowLayout
+
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    CGFloat picDimension = self.view.frame.size.width / 4.0f;
+//    return CGSizeMake(picDimension, picDimension);
+//}
+//
+//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+//{
+//    CGFloat leftRightInset = self.view.frame.size.width / 14.0f;
+//    return UIEdgeInsetsMake(0, leftRightInset, 0, leftRightInset);
+//}
+
 
 - (void)userActivityWillSave:(NSUserActivity *)userActivity
 {

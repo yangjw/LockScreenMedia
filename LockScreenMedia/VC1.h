@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface VC1 : UIViewController
-
+-(void)getPersonOutOfAddressBook;
 @end
