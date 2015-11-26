@@ -30,6 +30,7 @@
 		217CF5081BFC20480051928F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217CF5071BFC20480051928F /* AudioToolbox.framework */; };
 		218C61991C04486400DAE8F1 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218C61981C04486400DAE8F1 /* AddressBook.framework */; };
 		218C619B1C04486900DAE8F1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218C619A1C04486900DAE8F1 /* AddressBookUI.framework */; };
+		21B9E6171C06D226006A1E8C /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B9E6161C06D226006A1E8C /* Contacts.framework */; };
 		21FCEAE01BFDA1E200270DB5 /* YAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FCEADF1BFDA1E200270DB5 /* YAudioPlayer.m */; };
 		21FCEAE21BFDBE5F00270DB5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FCEAE11BFDBE5F00270DB5 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		217CF5071BFC20480051928F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		218C61981C04486400DAE8F1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		218C619A1C04486900DAE8F1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		21B9E6161C06D226006A1E8C /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		21BE9E661C040C81004117AB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		21FCEADE1BFDA1E200270DB5 /* YAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAudioPlayer.h; sourceTree = "<group>"; };
 		21FCEADF1BFDA1E200270DB5 /* YAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAudioPlayer.m; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B9E6171C06D226006A1E8C /* Contacts.framework in Frameworks */,
 				218C619B1C04486900DAE8F1 /* AddressBookUI.framework in Frameworks */,
 				218C61991C04486400DAE8F1 /* AddressBook.framework in Frameworks */,
 				21FCEAE21BFDBE5F00270DB5 /* CoreMedia.framework in Frameworks */,
@@ -99,6 +102,7 @@
 		217CF4D01BFC0AC80051928F = {
 			isa = PBXGroup;
 			children = (
+				21B9E6161C06D226006A1E8C /* Contacts.framework */,
 				218C619A1C04486900DAE8F1 /* AddressBookUI.framework */,
 				218C61981C04486400DAE8F1 /* AddressBook.framework */,
 				21FCEAE11BFDBE5F00270DB5 /* CoreMedia.framework */,

@@ -14,6 +14,7 @@
 #import <AVKit/AVKit.h>
 #import "YAudioPlayer.h"
 #import <CoreMedia/CoreMedia.h>
+#import <Contacts/Contacts.h>
 
 
 static NSString *ActivityTypeView = @"com.razeware.shopsnap.view";
